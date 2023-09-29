@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Martijn</title>
+    <link rel="shortcut icon" type="x-icon" href="../assets/cheese.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/colors.css" />
+    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./css/section.css" />
+    <script>
+      function getAge() {
+        var birthDate = new Date(2001, 7, 23);
+        var today = new Date();
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+        }
+        return age;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="landing">
+        <div class="bubble">
+          <div class="bubble-inner">
+            <div class="bubble-front">
+              <div class="greeting">
+                <h2>Hi, I'm Martijn</h2>
+                <p class="FED">A front-end Developer</p>
+                <p class="NLD">From The Netherlands</p>
+              </div>
+            </div>
+            <div class="bubble-back">
+              <img src="../assets/me.PNG" alt="Martijn" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-me">
+        <p class="title"><b>Who am I</b></p>
+        <content class="horizontal">
+          <div class="paper about">
+            <p class="heading-title">Personal Information</p>
+            <ul>
+              <li>Name: <span>Martijn Engel</span></li>
+              <li>
+                Age:
+                <span
+                  ><script>
+                    document.write(getAge());
+                  </script></span
+                >
+              </li>
+              <li>School: <span>Bradley University</span></li>
+              <li>Graduation year: <span>Summer 24</span></li>
+            </ul>
+          </div>
+
+          <div class="paper about me">
+            <p class="heading-title">About Me</p>
+            <p>
+              I am a
+              <script>
+                document.write(getAge());
+              </script>
+              year old student from the Netherlands, currently studying at
+              Bradley University in Peoria, Illinois. The FA23 semester at
+              Bradley University is my second to last semester before I
+              graduate. This semester is an abroad minor program with my own
+              University called HAN. In my down time I like to watch movies and
+              series, be active and read books. I also am currently employed at
+              a company called
+              <a href="https://www.valkdigital.nl/" target="_blank"
+                >Valk Digital</a
+              >
+              as a Junior Front-end Developer.
+            </p>
+          </div>
+        </content>
+      </section>
+      <section class="work-experience">
+        <p class="title"><b>Work Experience</b></p>
+        <div class="work-cards">
+          <div class="line"></div>
+          <div class="paper work left">
+            <div>
+              <h4>Valk Digital</h4>
+              <img src="../assets/valkdigital.png" alt="Valk Digital" />
+            </div>
+            <p>Junior Front-end Developer</p>
+            <p>June 2022 - Present</p>
+            <p class="summary">
+              Valk Digital is a software company responsible for everything IT
+              related in one of the 142 hotels in the Netherlands. My job is to
+              collaborate with the team to create new features for the hotels
+              and maintain the current features.
+            </p>
+          </div>
+          <div class="paper work right">
+            <div>
+              <h4>Inside AirBnb</h4>
+              <img src="../assets/airbnb.webp" alt="Inside AirBnb" />
+            </div>
+            <p>Student Developer</p>
+            <p>January 2023 - June 2023</p>
+            <p class="summary">
+              During the NOTS semester at HAN, I, was instructed to develop a
+              system that could be used to get insights in the AirBnb market in
+              the city of London. The system was developed using Azure Cloud
+              services, C#.Net as backend and a React-JS front-end. The system
+              was required to be authenticated using Azure AD. During this
+              project I learned a lot about Azure Cloud services and how to use
+              them.
+            </p>
+          </div>
+          <div class="paper work left">
+            <div>
+              <h4>JDI smart web Application</h4>
+              <img src="../assets/JDI.jpeg" alt="JDI smart web solutions" />
+            </div>
+            <p>Student Developer</p>
+            <p>January 2021 - June 2022</p>
+            <p class="summary">
+              During the OOSE semester at HAN, I, along with 4 other students,
+              was instructed to develop a system for the client JDI smart web
+              application . JDI instructed our group to develop an end-to-end
+              encrypted chat application so that communication between their
+              support team and the customers could be entirely confidential.
+            </p>
+          </div>
+          <div class="paper work right">
+            <div>
+              <h4>Snel-weg</h4>
+              <img src="../assets/snelweg.jpeg" alt="snel-weg" />
+            </div>
+            <p>Student Developer</p>
+            <p>September 2020 - December 2020</p>
+            <p class="summary">
+              During the DWA semester at HAN, I, along with 3 other students,
+              was instructed to develop a system that could be used to upload
+              large data sets and get a visual representation on a world map.
+              The first few datasets we used were datasets of the road network
+              in the Netherlands. Thats why we called the project Snel-weg
+              (high-way).
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <p class="title"><b>Get in contact</b></p>
+        <div class="contact-card">
+          <form action="mailto:mengel@mail.bradley.edu" method="post">
+            <div class="field-section">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                required
+                placeholder="The message "
+              ></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
