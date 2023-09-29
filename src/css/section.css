@@ -1,0 +1,153 @@
+.title * {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif !important;
+}
+.about-me .title,
+.contact .title {
+  color: whitesmoke;
+}
+.title {
+  margin: 8px 0 0 8px;
+  font-size: 3.5rem;
+}
+
+.paper {
+  min-width: 20%;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 25px;
+  padding-left: 10px;
+  margin-left: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.about {
+  margin-top: 5%;
+  background-color: rgba(227, 160, 160, 0.8);
+}
+.work {
+  margin: 50px 0 25px 0;
+  width: 40%;
+  background-color: rgba(193, 196, 193);
+  z-index: 5;
+}
+
+.contact-card {
+  margin: auto;
+}
+.paper ul {
+  list-style: none;
+  line-height: 3;
+}
+.paper ul li {
+  font-weight: bold;
+}
+.paper ul li span {
+  font-weight: 400;
+  float: right;
+}
+.heading-title {
+  font-size: 1.25rem;
+  margin-left: 10px;
+  font-weight: 500;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+.me {
+  width: 40%;
+  margin-top: 15%;
+  margin-left: 30%;
+  min-height: 250px;
+}
+.me .heading-title {
+  margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(12, 77, 100, 0.681);
+  font-weight: 700;
+}
+
+/* ======== START WROK SECTION ======== */
+.work-experience {
+  padding-bottom: 10%;
+}
+.work-cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.25;
+  padding-bottom: 5%;
+}
+.line {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  bottom: 0%;
+  width: 3px;
+  height: 100%;
+  background-color: #000;
+  z-index: 1;
+}
+
+.work-cards .left {
+  margin-left: 15%;
+}
+.work-cards .work div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 25px;
+}
+.work-cards .work img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.work-cards .work .summary {
+  margin-top: 5%;
+}
+
+/* ===== START CONTACT SECTION */
+.contact-card form {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 25px;
+  min-height: 450px;
+  min-width: 650px;
+  background-color: rgba(160, 202, 227, 0.8);
+  margin: 5% 0;
+}
+.field-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5%;
+}
+
+.field-section textarea {
+  margin-top: 3%;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 250px;
+  border: none;
+  outline: none;
+  font-size: 0.75rem;
+}
+form button {
+  margin: 5% 10% 5% auto;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.15rem;
+  background-color: rgba(12, 77, 100, 0.681);
+  color: whitesmoke;
+  font-weight: 700;
+  cursor: pointer;
+}

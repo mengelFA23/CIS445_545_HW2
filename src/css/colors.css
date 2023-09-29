@@ -1,0 +1,18 @@
+body {
+  background-color: rgba(34, 82, 129, 0.777);
+}
+.landing {
+  background: url("../../assets/landing.png") center/cover no-repeat;
+}
+section.about-me {
+  background-color: #c8102e;
+}
+section.work-experience {
+  background-color: #ffffff;
+}
+section.contact {
+  background-color: #21468b;
+}
+section.footer {
+  background-color: #ff9b00;
+}
