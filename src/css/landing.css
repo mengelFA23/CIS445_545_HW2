@@ -1,7 +1,7 @@
 .landing {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .bubble {
   perspective: 1000px;
@@ -11,7 +11,7 @@
   transform-style: preserve-3d;
   transition: transform 0.5s;
   cursor: pointer;
-  margin: -20% 10% 0 0;
+  margin: 15% 10% 0 0;
 }
 
 .bubble-inner {
@@ -45,7 +45,7 @@
     flex-direction: column;
     color: whitesmoke;
     line-height: 1.25;
-    .FED {
+.FED {
       font-size: 0.9rem;
       font-weight: 550;
     }

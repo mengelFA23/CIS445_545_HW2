@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/colors.css" />
     <link rel="stylesheet" href="./css/landing.css" />
     <link rel="stylesheet" href="./css/section.css" />
+    <link rel="stylesheet" href="./css/typing.css" />
     <script>
       function getAge() {
         var birthDate = new Date(2001, 7, 23);
@@ -25,6 +26,14 @@
   <body>
     <div class="wrapper">
       <section class="landing">
+        <div class="typing-container">
+          <span class="sentence">Have a<br /></span>
+          <div>
+            <span id="sentence" class="sentence"></span>
+            <span class="input-cursor"></span>
+          </div>
+          <span class="sentence">day!</span>
+        </div>
         <div class="bubble">
           <div class="bubble-inner">
             <div class="bubble-front">
@@ -169,4 +178,5 @@
       </section>
     </div>
   </body>
+  <script src="./scripts/type.js"></script>
 </html>
